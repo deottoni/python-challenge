@@ -58,13 +58,15 @@ print("Greatest Decrease in Profits: Sep-2013 (" + str(min_change) + ")")
 
 
 #results to output new csv
+
 title = "Financial Analysis \n ----------------------------"
 total_months = ("Total Months: " + str(months))
-total_changes = ("Average Change: " + str(averagediff))
+total_values = ("Total: " + str(total))
+avg_change = ("Average Change: " + str(averagediff))
 max_change_result = ("Greatest Increase in Profits: Feb-2012 (" + str(max_change) + ")")
 min_change_result = ("Greatest Decrease in Profits: Sep-2013 (" + str(min_change) + ")")
 
 # create txt file with results
 text_file = open('financial_analysis.txt', 'w')
-text_file.write(title +"\n"+ total_months+"\n"+total_changes+"\n"+max_change_result+"\n"+min_change_result)
+text_file.write(title +"\n"+total_months+"\n"+total_values+"\n"+avg_change+"\n"+max_change_result+"\n"+min_change_result)
 text_file.close()
